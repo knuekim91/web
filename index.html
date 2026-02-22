@@ -1,5 +1,130 @@
-<html>
-    <body>
-        hi
-    </body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인공지능 수학</title>
+    <!-- 구글 폰트 적용 (공학적인 느낌의 Noto Sans KR) -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* 심해색 (공학적 신뢰감) */
+            --accent-color: #3498db;  /* 테크 블루 */
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* 배경 디자인: 수학적 그리드 패턴 */
+        .bg-pattern {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: 
+                linear-gradient(rgba(52, 152, 219, 0.05) 1px, transparent 1px),
+                linear-gradient(90(rgba(52, 152, 219, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            z-index: -1;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); /* 현대적인 사선 디자인 */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: -1px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-weight: 300;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 2rem;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: -50px auto 0; /* 헤더 위로 살짝 겹치게 */
+        }
+
+        .menu-card {
+            background: white;
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            min-width: 150px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent-color);
+        }
+
+        .menu-card:hover {
+            transform: translateY(-10px);
+            background: var(--accent-color);
+            color: white;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-pattern"></div>
+
+    <header>
+        <h1>인공지능 수학</h1>
+        <p>Mathematics for Artificial Intelligence</p>
+    </header>
+
+    <nav>
+        <!-- 각 링크는 해당 경로의 하위 페이지로 연결되도록 설정했습니다 -->
+        <a href="syllabus.html" class="menu-card">강의계획서</a>
+        <a href="lectures.html" class="menu-card">강의</a>
+        <a href="evaluation.html" class="menu-card">평가</a>
+        <a href="notice.html" class="menu-card">공지</a>
+    </nav>
+
+    <main>
+        <h2>환영합니다</h2>
+        <p>인공지능의 핵심이 되는 선형대수, 미분, 확률통계를 다룹니다.</p>
+    </main>
+
+    <footer>
+        © 2024 AI Math. All Rights Reserved.
+    </footer>
+
+</body>
 </html>
